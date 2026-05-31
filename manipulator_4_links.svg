@@ -84,10 +84,10 @@
     </g>
 
     <g font-family="Arial, sans-serif" font-size="20" font-style="italic" fill="#dc2626" stroke="#f8fafc" stroke-width="5" paint-order="stroke">
-      <text x="70" y="-26">θ<tspan baseline-shift="sub" font-size="13">1</tspan></text>
-      <text x="188" y="-88">θ<tspan baseline-shift="sub" font-size="13">2</tspan></text>
-      <text x="284" y="-158">θ<tspan baseline-shift="sub" font-size="13">3</tspan></text>
-      <text x="410" y="-118">θ<tspan baseline-shift="sub" font-size="13">4</tspan></text>
+      <text x="70" y="-26">θ<tspan baseline-shift="sub" font-size="13">1</tspan>+π</text>
+      <text x="188" y="-88">θ<tspan baseline-shift="sub" font-size="13">2</tspan>+π</text>
+      <text x="284" y="-158">θ<tspan baseline-shift="sub" font-size="13">3</tspan>+π</text>
+      <text x="410" y="-118">θ<tspan baseline-shift="sub" font-size="13">4</tspan>+π</text>
     </g>
 
     <g font-family="Arial, sans-serif" font-size="15" fill="#334155" stroke="#f8fafc" stroke-width="4" paint-order="stroke">

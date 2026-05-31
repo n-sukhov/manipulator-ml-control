@@ -23,3 +23,70 @@ $$
 $$
 \Theta^\ast=\arg\min_{\Theta\in\mathbb{R}^n} f_{dist}(\Theta)
 $$
+Тогда:
+
+$$
+\nabla_\Theta f_{dist}(\Theta)
+=
+2\sum_{i\in I}
+\left(
+\frac{\partial (f_{fk}(\Theta))_i}{\partial \Theta}
+\right)^T
+\left((f_{fk}(\Theta))_i-G_i\right)=0\Rightarrow\\
+\Rightarrow
+\sum_{i\in I}
+\left(
+\frac{\partial (f_{fk}(\Theta))_i}{\partial \Theta}
+\right)^T
+\left((f_{fk}(\Theta))_i-G_i\right)=0
+$$
+
+Запишем формулу для прямой кинематики:
+
+$$
+J_m(\Theta)
+=
+\sum_{k=1}^{m}
+d_k
+\begin{pmatrix}
+\cos(\theta_1+\theta_2+\dots+\theta_k)\\
+\sin(\theta_1+\theta_2+\dots+\theta_k)
+\end{pmatrix}
+$$
+
+$$
+f_{fk}(\Theta)=(J_1(\Theta),J_2(\Theta),\dots,J_n(\Theta))
+$$
+
+Отсюда аналитически выразим Якобиан:
+
+$$
+\frac{\partial J_m(\Theta)}{\partial \Theta}
+=
+\begin{pmatrix}
+\frac{\partial x_m}{\partial \theta_1} & \dots & \frac{\partial x_m}{\partial \theta_n}\\
+\frac{\partial y_m}{\partial \theta_1} & \dots & \frac{\partial y_m}{\partial \theta_n}
+\end{pmatrix}
+$$
+
+По столбцам:
+
+$$
+\frac{\partial J_m(\Theta)}{\partial \theta_j}
+=
+\begin{cases}
+\sum_{k=j}^{m}
+d_k
+\begin{pmatrix}
+-\sin\varphi_k\\
+\cos\varphi_k
+\end{pmatrix},
+& j\le m\\
+\begin{pmatrix}
+0\\
+0
+\end{pmatrix},
+& j>m
+\end{cases}\\
+
+$$
