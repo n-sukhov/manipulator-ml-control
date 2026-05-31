@@ -1,0 +1,100 @@
+<svg width="960" height="720" viewBox="0 0 960 720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Schematic 4-link robot manipulator on a coordinate plane</title>
+  <desc id="desc">A four-link robot manipulator with line segments, bold circular joints, angle arcs, and its base at the coordinate origin.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1f2937"/>
+    </marker>
+
+    <pattern id="minor-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 H 0 V 20" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+    </pattern>
+
+    <pattern id="major-grid" width="100" height="100" patternUnits="userSpaceOnUse">
+      <rect width="100" height="100" fill="url(#minor-grid)"/>
+      <path d="M 100 0 H 0 V 100" fill="none" stroke="#cbd5e1" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="960" height="720" fill="#f8fafc"/>
+
+  <!-- Coordinate system: origin is translated to screen point (260, 520). -->
+  <g transform="translate(260 520)">
+    <rect x="-220" y="-620" width="900" height="820" fill="url(#major-grid)"/>
+
+    <line x1="-210" y1="0" x2="650" y2="0" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <line x1="0" y1="170" x2="0" y2="-500" stroke="#1f2937" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+    <text x="660" y="7" font-family="Arial, sans-serif" font-size="22" fill="#111827">x</text>
+    <text x="14" y="-474" font-family="Arial, sans-serif" font-size="22" fill="#111827">y</text>
+    <text x="-34" y="30" font-family="Arial, sans-serif" font-size="18" fill="#111827">0</text>
+
+    <g font-family="Arial, sans-serif" font-size="14" fill="#64748b">
+      <text x="94" y="24">1</text>
+      <text x="194" y="24">2</text>
+      <text x="294" y="24">3</text>
+      <text x="394" y="24">4</text>
+      <text x="494" y="24">5</text>
+      <text x="-28" y="-96">1</text>
+      <text x="-28" y="-196">2</text>
+      <text x="-28" y="-296">3</text>
+      <text x="-28" y="-396">4</text>
+    </g>
+
+    <g stroke="#94a3b8" stroke-width="1.25">
+      <line x1="100" y1="-7" x2="100" y2="7"/>
+      <line x1="200" y1="-7" x2="200" y2="7"/>
+      <line x1="300" y1="-7" x2="300" y2="7"/>
+      <line x1="400" y1="-7" x2="400" y2="7"/>
+      <line x1="500" y1="-7" x2="500" y2="7"/>
+      <line x1="-7" y1="-100" x2="7" y2="-100"/>
+      <line x1="-7" y1="-200" x2="7" y2="-200"/>
+      <line x1="-7" y1="-300" x2="7" y2="-300"/>
+      <line x1="-7" y1="-400" x2="7" y2="-400"/>
+    </g>
+
+    <!-- Link endpoints in coordinate units: O(0,0), A(1.5,0.9), B(2.7,2.2), C(4.0,1.7), D(5.0,2.8). -->
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="0,0 150,-90 270,-220 400,-170 500,-280" stroke="#2563eb" stroke-width="9"/>
+      <polyline points="0,0 150,-90 270,-220 400,-170 500,-280" stroke="#dbeafe" stroke-width="3"/>
+    </g>
+
+    <g stroke="#111827" stroke-width="4" fill="#ffffff">
+      <circle cx="0" cy="0" r="15"/>
+      <circle cx="150" cy="-90" r="15"/>
+      <circle cx="270" cy="-220" r="15"/>
+      <circle cx="400" cy="-170" r="15"/>
+      <circle cx="500" cy="-280" r="13"/>
+    </g>
+
+    <g font-family="Arial, sans-serif" font-size="16" fill="#111827" stroke="#f8fafc" stroke-width="5" paint-order="stroke">
+      <text x="112" y="-110">J<tspan baseline-shift="sub" font-size="11">1</tspan></text>
+      <text x="286" y="-246">J<tspan baseline-shift="sub" font-size="11">2</tspan></text>
+      <text x="376" y="-214">J<tspan baseline-shift="sub" font-size="11">3</tspan></text>
+      <text x="516" y="-264">J<tspan baseline-shift="sub" font-size="11">4</tspan></text>
+    </g>
+
+    <!-- Angle arcs, drawn as short geometric marks around the joints. -->
+    <g fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round">
+      <path d="M 56 0 A 56 56 0 0 0 48 -29"/>
+      <path d="M 108 -65 A 50 50 0 0 0 185 -127"/>
+      <path d="M 236 -183 A 50 50 0 0 0 317 -202"/>
+      <path d="M 355 -187 A 42 42 0 1 0 434 -207"/>
+    </g>
+
+    <g font-family="Arial, sans-serif" font-size="20" font-style="italic" fill="#dc2626" stroke="#f8fafc" stroke-width="5" paint-order="stroke">
+      <text x="70" y="-26">θ<tspan baseline-shift="sub" font-size="13">1</tspan></text>
+      <text x="188" y="-88">θ<tspan baseline-shift="sub" font-size="13">2</tspan></text>
+      <text x="284" y="-158">θ<tspan baseline-shift="sub" font-size="13">3</tspan></text>
+      <text x="410" y="-118">θ<tspan baseline-shift="sub" font-size="13">4</tspan></text>
+    </g>
+
+    <g font-family="Arial, sans-serif" font-size="15" fill="#334155" stroke="#f8fafc" stroke-width="4" paint-order="stroke">
+      <text x="54" y="-78">link<tspan baseline-shift="sub" font-size="10">1</tspan></text>
+      <text x="184" y="-188">link<tspan baseline-shift="sub" font-size="10">2</tspan></text>
+      <text x="318" y="-146">link<tspan baseline-shift="sub" font-size="10">3</tspan></text>
+      <text x="462" y="-222">link<tspan baseline-shift="sub" font-size="10">4</tspan></text>
+    </g>
+  </g>
+</svg>
