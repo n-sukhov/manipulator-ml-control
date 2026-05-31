@@ -87,6 +87,5 @@ d_k
 0
 \end{pmatrix},
 & j>m
-\end{cases}\\
-
+\end{cases}
 $$
