@@ -18,5 +18,5 @@ $$
 f_{dist}:\Theta\to\mathbb{R},\quad
 $$
 $$
-f_{dist}=\sum_{i\in I}\|J_i-G_i\|=\sum_{i\in I}\sqrt{((f_{fk})_i(\Theta) - G_i)^T((f_{fk})_i(\Theta) - G_i)}
+f_{dist}=\sum_{i\in I}\|J_i-G_i\|=\sum_{i\in I}\sqrt{((f_{fk}(\Theta))_i - G_i)^T((f_{fk}(\Theta))_i - G_i)}\to\min
 $$
