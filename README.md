@@ -1,2 +1,2 @@
 # Optimization-based inverse kinematics
-[Открыть описание](./manipulator_ml_control.pdf)
+[Открыть описание](./Сухов_Николай_Михайлович_практика_отчет.pdf)
